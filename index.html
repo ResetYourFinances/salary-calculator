@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
 
-
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCJFEWB60H"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-ZCJFEWB60H');
 </script>
   
@@ -129,6 +127,23 @@ data.push(amount);
 html += `<div class="result-item"><strong>${category}</strong>: £${amount.toFixed(2)}</div>`;
 
 }
+
+// ✅ NEW SECTION ADDED HERE
+html += `
+<br><br>
+<div style="margin-top:20px;padding:15px;background:#f0f4f8;border-radius:8px;">
+  <strong>What this means for you:</strong><br>
+  This breakdown shows how your money could be structured for better financial stability and long-term growth.
+  <br><br>
+  <strong>Next step:</strong><br>
+  Want to understand how to improve your situation and take control of your finances?
+  <br><br>
+  <a href="https://resetyourfinances.github.io/salary-calculator/" target="_blank" 
+     style="color:#2c7be5;font-weight:bold;text-decoration:none;">
+     Visit the full guide →
+  </a>
+</div>
+`;
 
 document.getElementById("results").innerHTML = html;
 
